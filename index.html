@@ -12,10 +12,27 @@
   <div id="app"></div>
   <script>
     window.$docsify = {
-      name: '',
-      repo: ''
+      loadSidebar: true,
+      name: '前端知识体系',
+      relativePath: true,
+      notFoundPage: true,
+      Valine: {
+        el: null,
+        appId: 'jDpi3g7nJwv54CYOHvN2Njk1-gzGzoHsz',
+        appKey: 'AKkHDweSYm1f0f7GbBi99bp7',
+        visitor: true
+      },
+      pagination: {
+        previousText: '上一章节',
+        nextText: '下一章节',
+        crossChapter: true,
+        crossChapterText: true,
+      },
     }
   </script>
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+  <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+  <script src="//unpkg.com/docsify-valine/dist/docsify-valine.min.js"></script>
+  <script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>
 </body>
 </html>
